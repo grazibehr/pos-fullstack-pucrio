@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfólio Graziela Behrens Desenvolvedora FullStack"
+    />
+    <meta name="theme-color" content="#ec4899" />
+    <title>Graziela Behrens — Portfólio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+    <header class="site-header">
+      <div class="container nav" role="navigation" aria-label="Principal">
+        <a href="#topo" class="brand">
+          <span class="icon" aria-hidden="true">💜</span> <span>BehrDev</span>
+        </a>
+        <button
+          id="btnMenu"
+          class="hamburger"
+          aria-label="Abrir menu"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          ☰ <span class="visually-hidden">Menu</span>
+        </button>
+        <nav id="menu" class="menu" aria-label="Seções do site">
+          <a href="#sobre">Sobre</a> <a href="#projetos">Projetos</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#experiencia">Experiência</a> <a href="#contato">Contato</a>
+        </nav>
+        <div class="controls" aria-label="Preferências">
+          <button
+            id="themeToggle"
+            class="btn"
+            type="button"
+            aria-pressed="false"
+            aria-label="Alternar tema"
+          >
+            🌓
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="conteudo" tabindex="-1">
+      <section id="topo" class="hero" aria-labelledby="hero-title">
+        <div class="deco" aria-hidden="true">
+          <div class="blob pink"></div>
+          <div class="blob violet"></div>
+        </div>
+        <div class="container hero-inner">
+          <div class="hero-col">
+            <h1 id="hero-title">Oi, eu sou a Grazi 💜</h1>
+            <p class="lead">
+              Construo interfaces rápidas, acessíveis e bonitinhas.
+            </p>
+            <div class="pills" aria-label="Tecnologias principais">
+              <span class="pill">Vue 2/3</span>
+              <span class="pill">Node.js</span>
+              <span class="pill">Vuetify</span> <span class="pill">SQL</span>
+            </div>
+            <div class="cta">
+              <a
+                class="btn"
+                href="./assets/pdf/CVGrazielaBehrens.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Baixar CV
+              </a>
+            </div>
+          </div>
+          <figure class="hero-avatar">
+            <img
+              src="./assets/img/avatar.jpg"
+              alt="Foto de perfil da Graziela sorrindo"
+              width="260"
+              height="260"
+            />
+            <figcaption class="visually-hidden">
+              Retrato de Graziela Behrens
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="sobre" class="container" aria-labelledby="sobre-title">
+        <h2 id="sobre-title">Sobre mim</h2>
+        <div class="grid about-grid">
+          <article class="card" aria-labelledby="sobre-missao">
+            <h3 id="sobre-missao">Missão</h3>
+            <p>
+              Entregar softwares: acessíveis, performáticos e fáceis de manter.
+            </p>
+          </article>
+          <article class="card" aria-labelledby="sobre-stack">
+            <h3 id="sobre-stack">Stacks</h3>
+            <p>
+              Vue 2/3, Vuetify, Pinia/Vuex, Node.js, Express, SQL
+              (Postgres/MySQL), Git
+            </p>
+          </article>
+          <article class="card" aria-labelledby="sobre-atuacao">
+            <h3 id="sobre-atuacao">Atuação</h3>
+            <p>FullStack</p>
+          </article>
+        </div>
+      </section>
+      <section id="projetos" class="container" aria-labelledby="projetos-title">
+        <h2 id="projetos-title">Projetos</h2>
+        <div class="projects" role="list">
+          <article
+            class="project card"
+            role="listitem"
+            aria-labelledby="p1-title"
+          >
+            <div class="project-thumb">
+              <img
+                src="./assets/img/projectExemplo.jpg"
+                alt="Dashboard financeiro com gráficos e cartões de saldo"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-body">
+              <h3 id="p1-title">ConscientEasy — Controle Financeiro</h3>
+              <p>
+                Dashboard de entradas/saídas, metas e offline-first (IndexedDB +
+                sync). Front em Vue + Vuetify; API REST.
+              </p>
+              <ul class="tags" aria-label="Tecnologias">
+                <li>Vue</li>
+                <li>Vuetify</li>
+                <li>IndexedDB</li>
+                <li>Node</li>
+              </ul>
+              <div class="actions">
+                <a class="btn" href="#" aria-label="Abrir demo do ConscientEasy"
+                  >Demo</a
+                >
+                <a
+                  class="btn"
+                  href="#"
+                  aria-label="Abrir repositório do ConscientEasy no GitHub"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="habilidades" class="container" aria-labelledby="hab-title">
+        <h2 id="hab-title">Habilidades</h2>
+        <ul class="skills" role="list">
+          <li class="skill" role="listitem">
+            <div class="skill-head">
+              <strong>Vue.js</strong><span aria-hidden="true">—</span
+              ><span class="skill-level">Avançado</span>
+            </div>
+            <div
+              class="meter"
+              role="meter"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="85"
+              aria-label="Nível em Vue"
+            >
+              <span style="width: 85%"></span>
+            </div>
+          </li>
+          <li class="skill" role="listitem">
+            <div class="skill-head">
+              <strong>Node.js</strong><span aria-hidden="true">—</span
+              ><span class="skill-level">Intermediário</span>
+            </div>
+            <div
+              class="meter"
+              role="meter"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="70"
+              aria-label="Nível em Node"
+            >
+              <span style="width: 70%"></span>
+            </div>
+          </li>
+          <li class="skill" role="listitem">
+            <div class="skill-head">
+              <strong>SQL</strong><span aria-hidden="true">—</span
+              ><span class="skill-level">Intermediário</span>
+            </div>
+            <div
+              class="meter"
+              role="meter"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="65"
+              aria-label="Nível em SQL"
+            >
+              <span style="width: 65%"></span>
+            </div>
+          </li>
+          <li class="skill" role="listitem">
+            <div class="skill-head">
+              <strong>Acessibilidade</strong><span aria-hidden="true">—</span
+              ><span class="skill-level">Intermediário</span>
+            </div>
+            <div
+              class="meter"
+              role="meter"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="75"
+              aria-label="Nível em Acessibilidade"
+            >
+              <span style="width: 75%"></span>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="experiencia" class="container" aria-labelledby="xp-title">
+        <h2 id="xp-title">Experiência</h2>
+        <ol class="timeline">
+          <li class="tl-item">
+            <div class="tl-date">2024 — atual</div>
+            <div class="tl-card card">
+              <h3>Junior FullStack • Rotnet</h3>
+              <p>Front com Vue/Vuetify, Back com Node.js</p>
+            </div>
+          </li>
+          <li class="tl-item">
+            <div class="tl-date">2023</div>
+            <div class="tl-card card">
+              <h3>Estágio Front-End</h3>
+              <p>
+                Componentização, acessibilidade, otimização de formulários e
+                performance web.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+      <section id="contato" class="container" aria-labelledby="contato-title">
+        <h2 id="contato-title">Contato</h2>
+        <form id="formContato" novalidate aria-describedby="contato-dica card">
+          <div>
+            <label for="nome">Nome *</label>
+            <input id="nome" name="nome" autocomplete="name" required />
+          </div>
+          <div>
+            <label for="email">E-mail *</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div>
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+          </div>
+          <div class="actions">
+            <button class="btn btn--primary" type="submit">Enviar</button>
+            <span
+              id="status"
+              class="msg"
+              role="status"
+              aria-live="polite"
+            ></span>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        © <span id="ano"></span> Graziela Behrens — Feito com carinho
+        <span aria-hidden="true">🧁</span> ·
+        <a href="#conteudo">voltar ao topo</a>
+      </div>
+    </footer>
+    <noscript>
+      <div
+        class="container"
+        role="alert"
+        style="
+          margin: 1rem 0;
+          padding: 0.8rem;
+          border: 1px solid var(--border);
+          border-radius: 12px;
+          background: var(--surface);
+        "
+      >
+        Algumas funcionalidades (menu/tema/status do formulário) usam
+        JavaScript, mas o essencial segue acessível. 💖
+      </div>
+    </noscript>
+    <script src="./script.js"></script>
+  </body>
+</html>
